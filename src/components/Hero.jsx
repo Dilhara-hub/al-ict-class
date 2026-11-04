@@ -42,7 +42,7 @@ export default function Hero() {
                 className="h-16 w-16 rounded-full border-2 border-iris-400/50 object-cover shadow-md"
               />
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-iris-400">Class Mentor & Lecturer</p>
+                {/* <p className="text-xs font-semibold uppercase tracking-wider text-iris-400">Class Mentor & Lecturer</p> */}
                 <p className="text-lg font-bold text-white">{site.teacher}</p>
                 <p className="text-xs text-slate-400">University of Ruhuna (BICT)</p>
               </div>
