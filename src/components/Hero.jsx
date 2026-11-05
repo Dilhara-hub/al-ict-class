@@ -21,15 +21,18 @@ export default function Hero() {
           <h1 className="mt-6 text-4xl font-extrabold sm:text-5xl lg:text-[3.4rem]">අනාගත තාක්ෂණික ලෝකයට අදම සූදානම් වෙමු!</h1>
           <p className="mt-6 max-w-xl text-lg text-slate-300">තොරතුරු හා සන්නිවේදන තාක්ෂණය (ICT) විෂය නිවැරදිව අවබෝධ කරගෙන විශිෂ්ට ප්‍රතිඵලයක් කරා යන සාර්ථක අධ්‍යයන ගමන.</p>
           <p className="mt-4 max-w-xl text-slate-400">සම්පූර්ණ විෂය නිර්දේශය, ප්‍රායෝගික නිරූපණ සහ past paper සාකච්ඡා සහිත ක්‍රමානුකූල A/L ICT පන්තියක්.</p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a href={waUrl()} target="_blank" rel="noreferrer" className="rounded-full bg-iris-500 px-7 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105 hover:bg-iris-600">
+          <div className="mt-8 flex flex-wrap gap-3 sm:gap-4">
+            <a href={waUrl()} target="_blank" rel="noreferrer" className="rounded-full bg-iris-500 px-6 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-105 hover:bg-iris-600">
               Enroll Now
             </a>
-            <a href="#python-bootcamp" className="rounded-full border border-cyan2/40 bg-cyan2/10 px-7 py-3 font-semibold text-cyan2 transition-colors hover:bg-cyan2/20">
-              Python Boost Camp 🚀
+            <a href="#python-bootcamp" className="rounded-full border border-cyan2/40 bg-cyan2/10 px-5 py-3 font-semibold text-cyan2 transition-colors hover:bg-cyan2/20">
+              Python Camp 🚀
             </a>
-            <a href="#syllabus" className="rounded-full border border-white/30 px-7 py-3 font-semibold hover:bg-white/10">
-              Explore Syllabus
+            <a href="#webdev-bootcamp" className="rounded-full border border-orange-400/40 bg-orange-500/10 px-5 py-3 font-semibold text-orange-300 transition-colors hover:bg-orange-500/20">
+              Web Dev Camp 🌐
+            </a>
+            <a href="#syllabus" className="rounded-full border border-white/30 px-5 py-3 font-semibold hover:bg-white/10">
+              Syllabus
             </a>
           </div>
         </div>

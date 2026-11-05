@@ -6,6 +6,7 @@ import Introduction from './components/Introduction'
 import AboutClass from './components/AboutClass'
 import Syllabus from './components/Syllabus'
 import PythonBoostCamp from './components/PythonBoostCamp'
+import WebDevBoostCamp from './components/WebDevBoostCamp'
 import Timetable from './components/Timetable'
 import Teacher from './components/Teacher'
 import Contact from './components/Contact'
@@ -28,6 +29,7 @@ export default function App() {
         <AboutClass />
         <Syllabus />
         <PythonBoostCamp />
+        <WebDevBoostCamp />
         <Timetable />
         <Teacher />
         <Contact />

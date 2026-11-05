@@ -7,7 +7,7 @@ export const site = {
   whatsappMessage: 'ආයුබෝවන්! A/L ICT පන්තියට සම්බන්ධ වීමට කැමතියි.',
   phone: '071 5369775', // e.g. '077 123 4567'
   locationText: 'නවශාලාව, මාතර (Nawashalawa, Matara)',
-  mapEmbedUrl: 'https://www.google.com/maps/place/Nawa+Shalawa+Matara+(%E0%B6%B1%E0%B7%80+%E0%B7%81%E0%B7%8F%E0%B6%BD%E0%B7%8F%E0%B7%80+-+%E0%B6%B8%E0%B7%8F%E0%B6%AD%E0%B6%BB)/@6.0459783,80.5576828,951m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ae13f2fe829e1b9:0x56014be98e8863f0!8m2!3d6.0459783!4d80.5602577!16s%2Fg%2F1v_0h5v0?entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D', // Google Maps "Embed a map" src URL
+  mapEmbedUrl: 'https://www.google.com/maps/place/Nawa+Shalawa+Matara+(%E0%B6%B1%E0%B7%80+%E0%B7%81%E0%B7%8F%E0%B6%BD%E0%B7%8F%E0%B7%80+-+%E0%B6%B8%E0%B7%8F%E0%B6%AD%E0%B6%BB)/@6.0459783,80.5576828,951m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ae13f2fe829e1b9:0x56014be98e8863f0!8m2!3d6.0459783!4d80.5602577!16s%2Fg%2F1v_0h5v0?entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D',
   mapLinkUrl: 'https://www.google.com/maps/place/Nawa+Shalawa+Matara+(%E0%B6%B1%E0%B7%80+%E0%B7%81%E0%B7%8F%E0%B6%BD%E0%B7%8F%E0%B7%80+-+%E0%B6%B8%E0%B7%8F%E0%B6%AD%E0%B6%BB)/@6.0459783,80.5576828,951m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ae13f2fe829e1b9:0x56014be98e8863f0!8m2!3d6.0459783!4d80.5602577!16s%2Fg%2F1v_0h5v0?entry=ttu&g_ep=EgoyMDI2MTEwMS4wIKXMDSoASAFQAw%3D%3D',
   facebookUrl: '',
   youtubeUrl: '',
@@ -19,6 +19,7 @@ export const site = {
     ['about-ict', 'විෂය පිළිබඳව'],
     ['syllabus', 'විෂය නිර්දේශය'],
     ['python-bootcamp', 'Python Boost Camp'],
+    ['webdev-bootcamp', 'Web Dev Boost Camp'],
     ['timetable', 'පන්ති කාලසටහන'],
     ['teacher', 'ගුරුවරයා'],
     ['contact', 'සම්බන්ධ වන්න']
@@ -70,6 +71,61 @@ export const site = {
       { num: '04', title: 'Data Structures', desc: 'Lists, Tuples, Dictionaries & String methods' },
       { num: '05', title: 'Functions & Modularity', desc: 'Parameters, Return values, Built-in functions' },
       { num: '06', title: 'Files & Past Papers', desc: 'File handling, Error handling & Exam Questions' }
+    ]
+  },
+  webDevCamp: {
+    badge: 'විශේෂ ප්‍රායෝගික වැඩමුළුව · HTML · CSS · PHP Hands-on',
+    title: 'Web Development Boost Camp',
+    sinhalaTitle: 'වෙබ් නිර්මාණකරණ බූස්ට් කෑම්ප්',
+    subtitle: 'A/L ICT විභාගයේ Web Development (HTML, CSS, PHP) ඒකක සඳහා 100% ක් ප්‍රායෝගිකව සූදානම් කෙරෙන වැඩමුළුව.',
+    image: '/webdev-bootcamp.jpg',
+    description: 'A/L ICT විෂය නිර්දේශයේ අංක 12 සහ අදාළ ඒකක වන Web Technologies (HTML, CSS) සහ Server-side Scripting (PHP) මූලික සංකල්පවල සිට සම්පූර්ණ Dynamic වෙබ් අඩවියක් තනිවම නිර්මාණය කිරීම දක්වා ප්‍රායෝගිකව කේත ලියමින් පුහුණු කෙරේ. Client-side සහ Server-side සංකල්ප, Forms, GET/POST Methods, සහ A/L Past Paper Coding ප්‍රශ්න ගැඹුරින් ආවරණය කරමින් සිසුන්ට ඉහළම ලකුණු සහතික කෙරේ.',
+    whatsappMessage: 'ආයුබෝවන්! මට Web Development Boost Camp (HTML, CSS, PHP) වැඩමුළුව පිළිබඳ තොරතුරු දැනගැනීමට සහ ලියාපදිංචි වීමට අවශ්‍යයි.',
+    tags: [
+      { name: 'HTML5', color: 'bg-orange-500/20 text-orange-400 border-orange-500/30' },
+      { name: 'CSS3', color: 'bg-sky-500/20 text-sky-400 border-sky-500/30' },
+      { name: 'PHP', color: 'bg-indigo-500/20 text-indigo-300 border-indigo-500/30' },
+      { name: 'Responsive Web', color: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30' }
+    ],
+    features: [
+      {
+        icon: 'Layout',
+        title: 'HTML5 Semantic Web Design',
+        desc: 'Semantic tags, Forms, Tables, Lists සහ Accessibility නිවැරදි A/L ප්‍රමිතියට අනුව ලිවීම.'
+      },
+      {
+        icon: 'Palette',
+        title: 'Modern CSS3 Styling',
+        desc: 'Selectors, Box Model, Colors, Typography සහ Responsive layouts සරලව තේරුම් ගැනීම.'
+      },
+      {
+        icon: 'Server',
+        title: 'PHP Server-Side Scripting',
+        desc: 'Dynamic web pages, Variables, Decision making, Loops සහ Server execution ක්‍රියාවලිය.'
+      },
+      {
+        icon: 'FileCode',
+        title: 'Forms & GET / POST Processing',
+        desc: 'HTML Forms මගින් දත්ත ලබාගෙන PHP හරහා Process කිරීම සහ Data Validation සිදු කිරීම.'
+      },
+      {
+        icon: 'FileQuestion',
+        title: 'A/L Past Paper Coding Questions',
+        desc: 'පසුගිය වසරවල සියලුම HTML, CSS සහ PHP විභාග ප්‍රශ්න පත්‍ර ගැටලු සජීවීව සාකච්ඡා කිරීම.'
+      },
+      {
+        icon: 'Globe',
+        title: 'Hands-on Real Website Project',
+        desc: 'න්‍යායට පමණක් සීමා නොවී සම්පූර්ණ ක්‍රියාකාරී වෙබ් පිටුවක් මුල සිට පරිගණකයේ ගොඩනැගීම.'
+      }
+    ],
+    modules: [
+      { num: '01', title: 'HTML5 Fundamentals', desc: 'Tags, Elements, Lists, Tables & Structure' },
+      { num: '02', title: 'HTML Forms & Inputs', desc: 'Form controls, Input types, Attributes' },
+      { num: '03', title: 'CSS3 Styling & Layout', desc: 'Selectors, Box Model, Margins, Borders' },
+      { num: '04', title: 'PHP Basics & Syntax', desc: 'Variables, Echo, Operators, Control structures' },
+      { num: '05', title: 'Form Handling with PHP', desc: '$_GET, $_POST, Processing form input' },
+      { num: '06', title: 'A/L Past Papers & Projects', desc: 'Paper analysis, Common mistakes, Real project' }
     ]
   },
   methods: [

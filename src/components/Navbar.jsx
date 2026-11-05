@@ -5,7 +5,7 @@ import { waUrl } from '../lib'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
-  const link = 'text-sm font-medium text-slate-200 hover:text-white transition-colors'
+  const link = 'text-xs xl:text-sm font-medium text-slate-200 hover:text-white transition-colors'
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-navy-950/95 backdrop-blur">
@@ -14,23 +14,29 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="Dilhara Samaranayake Logo"
-            className="h-10 w-15 rounded-full border border-iris-400/40 object-cover shadow-sm transition-transform duration-300 group-hover:scale-105"
+            className="h-10 w-10 rounded-full border border-iris-400/40 object-cover shadow-sm transition-transform duration-300 group-hover:scale-105"
           />
           <div className="flex flex-col text-left">
             <span className="text-base font-bold leading-tight">
               Dilhara Samaranayake <span className="text-iris-400">ICT</span>
             </span>
             <span className="text-[10px] font-medium tracking-wider text-slate-400">
-              A/L ICT 
+              A/L ICT
             </span>
           </div>
         </a>
 
-        <ul className="hidden items-center gap-5 xl:gap-6 lg:flex">
+        <ul className="hidden items-center gap-3 xl:gap-5 lg:flex">
           {site.nav.map(([id, label]) => (
             <li key={id}>
               <a
-                className={`${link} ${id === 'python-bootcamp' ? 'text-cyan2 font-semibold hover:text-cyan-300' : ''}`}
+                className={`${link} ${
+                  id === 'python-bootcamp'
+                    ? 'text-cyan2 font-semibold hover:text-cyan-300'
+                    : id === 'webdev-bootcamp'
+                    ? 'text-orange-400 font-semibold hover:text-orange-300'
+                    : ''
+                }`}
                 href={`#${id}`}
               >
                 {label}
@@ -42,7 +48,7 @@ export default function Navbar() {
               href={waUrl()}
               target="_blank"
               rel="noreferrer"
-              className="rounded-full bg-iris-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-iris-600"
+              className="rounded-full bg-iris-500 px-4 py-2 text-xs xl:text-sm font-semibold text-white transition-colors hover:bg-iris-600 whitespace-nowrap"
             >
               පන්තියට සම්බන්ධ වන්න
             </a>
@@ -65,7 +71,13 @@ export default function Navbar() {
             <li key={id}>
               <a
                 onClick={() => setOpen(false)}
-                className={`${link} block py-3 ${id === 'python-bootcamp' ? 'text-cyan2 font-semibold' : ''}`}
+                className={`text-sm font-medium text-slate-200 hover:text-white block py-3 ${
+                  id === 'python-bootcamp'
+                    ? 'text-cyan2 font-semibold'
+                    : id === 'webdev-bootcamp'
+                    ? 'text-orange-400 font-semibold'
+                    : ''
+                }`}
                 href={`#${id}`}
               >
                 {label}

@@ -13,14 +13,20 @@ export default function Footer() {
           <div>
             <p className="text-lg font-bold text-white">{site.brand}</p>
             <p className="mt-1 text-sm text-slate-400">A/L ICT පන්තිය - මාතර</p>
-            <p className="mt-2 text-xs text-iris-400">Theory · Practical · Revision · Python Boost Camp</p>
+            <p className="mt-2 text-xs text-iris-400">Theory · Practical · Revision · Python & Web Dev Boost Camps</p>
           </div>
         </div>
         <ul className="grid grid-cols-2 gap-2 text-sm">
           {site.nav.map(([id, l]) => (
             <li key={id}>
               <a
-                className={`transition-colors hover:text-white ${id === 'python-bootcamp' ? 'text-cyan2 font-medium hover:text-cyan-300' : ''}`}
+                className={`transition-colors hover:text-white ${
+                  id === 'python-bootcamp'
+                    ? 'text-cyan2 font-medium hover:text-cyan-300'
+                    : id === 'webdev-bootcamp'
+                    ? 'text-orange-400 font-medium hover:text-orange-300'
+                    : ''
+                }`}
                 href={`#${id}`}
               >
                 {l}
